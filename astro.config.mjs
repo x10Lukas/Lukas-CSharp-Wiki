@@ -33,7 +33,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Datenverarbeitung',
-					autogenerate: { directory: 'grudatenverarbeitungndlagen'}
+					autogenerate: { directory: 'datenverarbeitung'}
 				},
 				{
 					label: 'Projekt- und Best Practices',
