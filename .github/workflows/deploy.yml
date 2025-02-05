@@ -1,0 +1,39 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Löse den Workflow jedes Mal aus, wenn du zum `main`-Branch pushst
+  # Du verwendest einen anderen Branchnamen? Ersetze `main` durch den Namen deines Branches
+  push:
+    branches: [ main ]
+  # Ermöglicht es dir, diesen Workflow manuell über die Registerkarte „Actions“ auf GitHub auszuführen.
+  workflow_dispatch:
+
+# Erlaube diesem Job, das Repo zu klonen und eine Seitenbereitstellung zu erstellen
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+      - name: Install, build, and upload your site
+        uses: withastro/action@v3
+        # with:
+          # path: . # Das Stammverzeichnis deines Astro-Projekts innerhalb des Repositorys. (optional)
+          # node-version: 20 # Die spezifische Version von Node, die für die Erstellung deiner Website verwendet werden soll. Der Standardwert ist 20. (optional)
+          # package-manager: pnpm@latest # Der Node-Paketmanager, der für die Installation von Abhängigkeiten und die Erstellung deiner Website verwendet werden soll. Wird automatisch anhand deines Lockfiles ermittelt. (optional)
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
