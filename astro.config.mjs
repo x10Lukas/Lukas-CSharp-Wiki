@@ -16,31 +16,38 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Einführung',
-					autogenerate: { directory: 'einfuehrung'}
+					autogenerate: { directory: 'einfuehrung'},
+					collapsed: true
 				},
 				{
 					label: 'Grundlagen',
-					autogenerate: { directory: 'grundlagen'}
+					autogenerate: { directory: 'grundlagen'},
+					collapsed: true
 				},
 				{
 					label: 'Methoden und Funktionen',
-					autogenerate: { directory: 'methoden'}
+					autogenerate: { directory: 'methoden'},
+					collapsed: true
 				},
 				{
 					label: 'Objektorientierte Programmierung (OOP)',
-					autogenerate: { directory: 'oop'}
+					autogenerate: { directory: 'oop'},
+					collapsed: true
 				},
 				{
 					label: 'Erweiterte Konzepte',
-					autogenerate: { directory: 'erweiterte-konzepte'}
+					autogenerate: { directory: 'erweiterte-konzepte'},
+					collapsed: true
 				},
 				{
 					label: 'Datenverarbeitung',
-					autogenerate: { directory: 'datenverarbeitung'}
+					autogenerate: { directory: 'datenverarbeitung'},
+					collapsed: true
 				},
 				{
 					label: 'Projekt- und Best Practices',
-					autogenerate: { directory: 'best-practices'}
+					autogenerate: { directory: 'best-practices'},
+					collapsed: true
 				},
 			],
 		}),
