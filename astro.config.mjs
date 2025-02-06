@@ -2,9 +2,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-import de from './src/content/i18n/de';
-import en from './src/content/i18n/en';
-
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://x10Lukas.github.io',
@@ -17,11 +14,6 @@ export default defineConfig({
 				github: 'https://github.com/withastro/starlight',
 				discord: 'https://discord.com/invite/DnJjec3KcP',
 				youtube: 'https://www.youtube.com/',
-			},
-			defaultLocale: 'de',
-			locales: {
-				de,
-				en
 			},
 			sidebar: [
 				{
