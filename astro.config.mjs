@@ -11,7 +11,7 @@ export default defineConfig({
 		starlight({
 			title: 'Lukas C# / CSharp Wiki',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/x10Lukas/Lukas-CSharp-Wiki',
 				discord: 'https://discord.com/invite/DnJjec3KcP',
 				youtube: 'https://www.youtube.com/',
 			},
