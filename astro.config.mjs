@@ -11,46 +11,98 @@ export default defineConfig({
 		starlight({
 			title: 'Lukas C# / CSharp Wiki',
 			social: {
-				github: 'https://github.com/x10Lukas/Lukas-CSharp-Wiki',
-				discord: 'https://discord.com/invite/DnJjec3KcP',
-				youtube: 'https://www.youtube.com/',
+				github: 'https://github.com/withastro/starlight',
 			},
 			sidebar: [
 				{
-					label: 'Einführung',
-					autogenerate: { directory: 'einfuehrung'},
-					collapsed: true
+					label: 'Programmiersprachen Übersicht',
+					link: 'overview', 
 				},
 				{
-					label: 'Grundlagen',
-					autogenerate: { directory: 'grundlagen'},
-					collapsed: true
+					label: 'C#',
+					items: [
+						{
+							label: 'Einführung',
+							items: [
+							'csharp/einfuehrung/01-was-ist-csharp',
+							'csharp/einfuehrung/02-dotnet-bedeutung',
+							],
+							collapsed: true,
+						},
+						{
+							label: 'Grundlagen',
+							items: [
+							'csharp/grundlagen/01-variablen-datentypen',
+							'csharp/grundlagen/02-operatoren-ausdruecke',
+							'csharp/grundlagen/03-kontrollstrukturen',
+							],
+							collapsed: true,
+						},
+						{
+							label: 'Methoden und Funktionen',
+							items: [
+							'csharp/methoden/01-methoden-erstellen',
+							'csharp/methoden/02-parameter-rueckgabewerte',
+							'csharp/methoden/03-ueberladung-rekursion',
+							],
+							collapsed: true,
+						},
+						{
+							label: 'Objektorientierte Programmierung (OOP)',
+							items: [
+							'csharp/oop/01-klassen-objekte',
+							'csharp/oop/02-konstruktoren-destruktoren',
+							'csharp/oop/03-vererbung-polymorphismus',
+							],
+							collapsed: true,
+						},
+						{
+							label: 'Erweiterte Konzepte',
+							items: [
+							'csharp/erweiterte-konzepte/01-delegates-events',
+							'csharp/erweiterte-konzepte/02-linq',
+							'csharp/erweiterte-konzepte/03-fehlerbehandlung',
+							],
+							collapsed: true,
+						},
+						{
+							label: 'Datenverarbeitung',
+							items: [
+							'csharp/datenverarbeitung/01-arrays-listen-dictionaries',
+							'csharp/datenverarbeitung/02-dateien-lesen-schreiben',
+							'csharp/datenverarbeitung/03-datenbanken-entity-framework',
+							],
+							collapsed: true,
+						},
+					],
+					collapsed: true,
 				},
 				{
-					label: 'Methoden und Funktionen',
-					autogenerate: { directory: 'methoden'},
-					collapsed: true
+					label: 'JavaScript',
+					items: [
+						{
+							label: 'Einführung',
+							items: [
+								'javascript/einfuehrung/01-was-ist-javascrip',
+							],
+							collapsed: true,
+						}
+					],
+					collapsed: true,
 				},
 				{
-					label: 'Objektorientierte Programmierung (OOP)',
-					autogenerate: { directory: 'oop'},
-					collapsed: true
-				},
-				{
-					label: 'Erweiterte Konzepte',
-					autogenerate: { directory: 'erweiterte-konzepte'},
-					collapsed: true
-				},
-				{
-					label: 'Datenverarbeitung',
-					autogenerate: { directory: 'datenverarbeitung'},
-					collapsed: true
-				},
-				{
-					label: 'Projekt- und Best Practices',
-					autogenerate: { directory: 'best-practices'},
-					collapsed: true
-				},
+					label: 'Python',
+					items: [
+						{
+							label: 'Einführung',
+							items: [
+							'python/einfuehrung/01-was-ist-python',
+							],
+							collapsed: true,
+						},
+					],
+					collapsed: true,
+				}, 		  
 			],
 		}),
 	],
