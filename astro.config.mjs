@@ -5,11 +5,11 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://x10Lukas.github.io',
-	base: '/Lukas-CSharp-Wiki/',
+	base: '/Lukas-Wiki/',
 
 	integrations: [
 		starlight({
-			title: 'Lukas C# / CSharp Wiki',
+			title: 'Lukas Wiki',
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
