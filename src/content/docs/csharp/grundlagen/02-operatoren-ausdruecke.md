@@ -61,8 +61,10 @@ Logische Operatoren werden verwendet, um **Bedingungen zu kombinieren**:
 | Operator | Beschreibung                 | Beispiel  |
 |----------|------------------------------|-----------|
 | `&&`     | Und (beide müssen wahr sein) | `a && b`  |
-| `        |                              | `         |
-| `!`      | Nicht (invertiert den Wert)  | `!a`      |
+| `‖`     |Wahr, wenn mindestens ein Operand wahr ist | `if (x < 0 ‖ x > 100)` |
+| `!`      |Nicht (invertiert den Wert)   | `!a`      |
+| `&`       | Bitweises Und               | `a & b`   |
+| `^`      | Bitweises Exklusiv-Oder      | `a ^ b`   |
 
 **Beispiel:**
 
@@ -116,7 +118,7 @@ Console.WriteLine(ergebnis); // Ausgabe: "Größer als 5"
 
 - **Inkrement (`++`) und Dekrement (`--`)**: Erhöhen oder verringern eine Zahl um 1.
 
-```sharp
+```csharp
 int a = 5;
 a++; // a wird zu 6
 a--; // a wird zu 5

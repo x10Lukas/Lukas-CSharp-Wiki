@@ -11,7 +11,7 @@ order: 10
 ## 🔹1. Was sind Delegates?
 Ein **Delegate** ist eine Art Platzhalter für Methoden. Er kann Methoden referenzieren und zur Laufzeit aufrufen.
 
-### **1.1 Definition eines Delegates**
+**1.1 Definition eines Delegates**
 ```csharp
 // Definition eines Delegates
 delegate void BegruessungDelegate(string name);

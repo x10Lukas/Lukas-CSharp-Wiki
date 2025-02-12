@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://x10Lukas.github.io',
-	base: '/Lukas-CSharp-Wiki/',
+	base: '/',
 
 	integrations: [
 		starlight({
@@ -35,6 +35,7 @@ export default defineConfig({
 							'csharp/grundlagen/01-variablen-datentypen',
 							'csharp/grundlagen/02-operatoren-ausdruecke',
 							'csharp/grundlagen/03-kontrollstrukturen',
+							'csharp/grundlagen/04-arrays-und-dictionaries'
 							],
 							collapsed: true,
 						},

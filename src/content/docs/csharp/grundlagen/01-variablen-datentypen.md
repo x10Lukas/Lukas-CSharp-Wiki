@@ -3,7 +3,7 @@ title: Variablen und Datentypen
 description: Grundlagen der Variablen und Datentypen in C#.
 ---
 
-In C# werden **Variablen** verwendet, um Werte zu speichern. Jede Variable hat einen **Datentyp**, der bestimmt, welche Art von Wert gespeichert werden kann.
+In C# werden **Variablen** verwendet, um Werte zu speichern. Jede Variable hat einen **Datentyp**, der bestimmt, welche Art von Wert gespeichert werden kann. Die Zuweisung eines Wertes bei der Deklaration ist optional.
 
 ---
 
